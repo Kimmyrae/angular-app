@@ -13,7 +13,7 @@ angular.module('angularAppApp')
     // ...
 
     // Public API here
-    return $resource('https://webknox-recipes.p.mashape.com/recipes/search', {}, {
+    return $resource('http://api.yummly.com/v1/api/recipes?_app_id=app-id&_app_key=app-key&your _search_parameters', {}, {
       query: {
         method:'GET',
         isArray:false,
@@ -21,8 +21,8 @@ angular.module('angularAppApp')
           query: "plantain"
         },
         headers: {
-          'X-Mashape-Key': 'TiZDcA3gXXmshknG5D824ApWXYGyp1UipJgjsnevBYCeykZQSL',
-          'Accept': 'application/json'
+          'X-Yummly-App-ID': '3ca00079',
+          'X-Yummly-App-Key': '51e01589489c5872d2b13c715aba12d8'
         }
       }
     });
