@@ -13,12 +13,12 @@ angular.module('angularAppApp')
     // ...
 
     // Public API here
-    return $resource('http://api.yummly.com/v1/api/recipes?_app_id=app-id&_app_key=app-key&your _search_parameters', {}, {
+    return $resource('http://api.yummly.com/v1/api/recipes?_app_id=3ca00079&_app_key=51e01589489c5872d2b13c715aba12d8&q=plantain&requirePictures=true', {}, {
       query: {
         method:'GET',
         isArray:false,
         params: {
-          query: "plantain"
+          q: "plantain"
         },
         headers: {
           'X-Yummly-App-ID': '3ca00079',

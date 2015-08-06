@@ -2,10 +2,10 @@
 <div ng-app class="jumbotron" ng-controller="MainCtrl">
   <h1>What can I do with a plantain?</h1>
   <p class="lead">
-    I found {{current.totalResults}} recipes.
+    I found {{current.totalMatchCount}} recipes.
   </p>
-  <div ng-repeat="recipe in current.results">
-    <p> id: {{recipe.id}} title: {{recipe.title}}
-    <img src="{{current.baseUri}}{{recipe.image}}" alt="{{recipe.title}}"></p>
+  <div ng-repeat="recipe in current.matches">
+    <p> id: {{recipe.id}} title: {{recipe.recipeName}}
+    <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
   </div>
 </div>
