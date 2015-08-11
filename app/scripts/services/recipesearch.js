@@ -20,7 +20,7 @@ angular.module('angularAppApp')
         method:'GET',
         isArray:false,
         params: {
-          q: "plantain"
+          query: "plantain"
         },
         headers: {
           'X-Yummly-App-ID': '3ca00079',
