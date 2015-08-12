@@ -4,18 +4,19 @@
     <h4>Search for recipes using an ingredient you have. </h4>
   <label> Ingredient : </label><input ng-model="query" placeholder="Plaintain" autofocus>
   <div class="search">
-
+    <div><button class="btn btn-md btn-primary" ng-click="findRecipes()">Get my Recipes!!</button>
+    </div>
 <h5>This app was inspired by the Plaintain sitting in my fruit bowl</h5>
   </div>
-
-  <p class="lead">
-    I found {{current.totalMatchCount}} recipes.
-  </p>
-  <div ng-repeat="recipe in current.matches | limitTo: 12">
-    <p> id: {{recipe.id}} title: {{recipe.recipeName}}
-    <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
-  </div>
+ <div ng-if="searchQuery">
+      <p class="lead">
+        I found {{recipesFound.totalMatchCount}} recipes. {{recipesFound}}
+      </p>{{recipesreal}}
+      <div ng-repeat="recipe in recipesFound.matches | limitTo: 12">
+        <p> id: {{recipe.id}} title: {{recipe.recipeName}}
+        <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
+      </div>
+    </div>
 </div>
-
   <div><button ng-click="">Share this amazing app!</button>
   </div>
