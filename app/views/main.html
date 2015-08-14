@@ -6,17 +6,15 @@
   <div class="search">
     <div><button class="btn btn-md btn-primary" ng-click="findRecipes()">Get my Recipes!!</button>
     </div>
-<h5>This app was inspired by the Plaintain sitting in my fruit bowl</h5>
+    <h5>This app was inspired by the Plaintain sitting in my fruit bowl</h5>
   </div>
- <div ng-if="searchQuery">
+  <div ng-if="recipesFound">
       <p class="lead">
-        I found {{recipesFound.totalMatchCount}} recipes. {{recipesFound}}
-      </p>{{recipesreal}}
+        I found {{recipesFound.totalMatchCount}} recipes. 
+      </p>
       <div ng-repeat="recipe in recipesFound.matches | limitTo: 12">
         <p> id: {{recipe.id}} title: {{recipe.recipeName}}
         <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
       </div>
     </div>
 </div>
-  <div><button ng-click="">Share this amazing app!</button>
-  </div>

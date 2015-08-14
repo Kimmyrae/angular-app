@@ -10,14 +10,14 @@
 angular.module('angularAppApp')
   .controller('MainCtrl', function ($scope, recipesearch) {
     $scope.recipesFound = recipesearch.find();
-    $scope.recipesFound.$promise.then(function(data){
-      $scope.recipesreal=data;
-      console.log(data);
-    });
+    // $scope.recipesFound.$promise.then(function(data){
+    //   $scope.recipesreal=data;
+    //   console.log(data);
+    // });
 
     $scope.findRecipes= function(){
         $scope.recipesFound = recipesearch.find({
-            query: $scope.ingredients
+            query: $scope.query
         });
         $scope.searchQuery = $scope.recipeName;
     };
