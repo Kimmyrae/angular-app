@@ -1,13 +1,13 @@
 
 <div ng-app class="jumbotron" ng-controller="MainCtrl">
   <h1>What can I do with a Plaintain? </h1>
-    <h4>Search for recipes using an ingredient you have. </h4>
-  <label> Ingredient : </label><input ng-model="query" placeholder="Plaintain" autofocus>
-  <div class="search">
-    <div><button class="btn btn-md btn-primary" ng-click="findRecipes()">Get my Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
-    </div>
+  <h5>This app was inspired by the lone Plaintain sitting in my fruit bowl.</h5>
+    <h4>Search for recipes by typing in an ingredient below. </h4>
 
-    <h5>This app was inspired by the Plaintain sitting in my fruit bowl</h5>
+  <label> Enter your ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
+  <div class="search">
+    <div><button class="btn btn-md btn-block btn-info" ng-click="findRecipes()">Get my Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
+    </div>
   </div>
   <p>You have{{savedRecipes}} saved recipes</p>
   <div ng-if="recipesFound">
@@ -17,7 +17,15 @@
       <div ng-repeat="recipe in recipesFound.matches | limitTo: 12">
         <p> id: {{recipe.id}} title: {{recipe.recipeName}}
         <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
-        <button class="btn btn-xs btn-danger" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button>
+        <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button>
+      </div>
+      <div ng-if="storage.savedRecipes">
+        <h2>Saved Recipes</h2>
+        <ul class="saved-recipes-list">
+          <li ng-repeat="recipe in storage.savedRecipes">
+            <a ng-href="/#/current/{{recipe.id}}" class="btn btn-lg btn-primary">{{receipe.name}}</a>
+          </li>
+        </ul>
       </div>
     </div>
 </div>

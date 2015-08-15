@@ -1,0 +1,9 @@
+div[ng-view].ng-enter {
+    -webkit-animation: fadeInRight 0.5s;
+    animation: fadeInRight 0.5s;
+}
+div[ng-view].ng-leave {
+    -webkit-animation: fadeOutDownBig 0.5s;
+    animation: fadeOutDownBig 0.5s;
+}
+`
