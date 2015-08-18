@@ -6,7 +6,7 @@
 
   <label> Enter your ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
   <div class="search">
-    <div><button class="btn btn-md btn-block btn-info" ng-click="findRecipes()">Get my Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
+    <div><button class="btn btn-md btn-block btn-primary" ng-click="findRecipes()">Get my Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
     </div>
   </div>
   <p>You have{{savedRecipes}} saved recipes</p>
@@ -14,7 +14,7 @@
       <p class="lead">
         I found {{recipesFound.totalMatchCount}} recipes.
       </p>
-      <div ng-repeat="recipe in recipesFound.matches | limitTo: 12">
+      <div ng-repeat="recipe in recipesFound.matches | limitTo: 16">
         <p> id: {{recipe.id}} title: {{recipe.recipeName}}
         <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
         <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button>
