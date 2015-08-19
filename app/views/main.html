@@ -14,16 +14,17 @@
       <p class="lead">
         I found {{recipesFound.totalMatchCount}} recipes.
       </p>
-      <div ng-repeat="recipe in recipesFound.matches | limitTo: 16">
+      <div ng-repeat="recipe in recipesFound.matches | limitTo: 12">
         <p> id: {{recipe.id}} title: {{recipe.recipeName}}
         <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
         <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button>
       </div>
       <div ng-if="storage.savedRecipes">
-        <h2>Saved Recipes</h2>
+        <h2>My recipe box</h2>
         <ul class="saved-recipes-list">
           <li ng-repeat="recipe in storage.savedRecipes">
-            <a ng-href="/#/current/{{recipe.id}}" class="btn btn-lg btn-primary">{{receipe.name}}</a>
+
+            <a ng-href="/#/current/{{recipe.id}}" class="btn btn-lg btn-primary">{{recipe.recipeName}}</a>
           </li>
         </ul>
       </div>

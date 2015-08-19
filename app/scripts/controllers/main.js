@@ -10,6 +10,7 @@
 angular.module('angularAppApp')
   .controller('MainCtrl', function ($scope, recipesearch, $localStorage) {
     $scope.recipesFound = recipesearch.find();
+    $scope.storage = $localStorage;
     // $scope.recipesFound.$promise.then(function(data){
     //   $scope.recipesreal=data;
     //   console.log(data);
