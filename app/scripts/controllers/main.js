@@ -27,7 +27,7 @@ angular.module('angularAppApp')
       if ($localStorage.savedRecipes){
         if($localStorage.savedRecipes.indexOf(recipe)){
           $localStorage.savedRecipes.push(recipe);
-        }            
+        }
 
       }  else {
         $localStorage.savedRecipes=[recipe];
@@ -37,4 +37,5 @@ angular.module('angularAppApp')
       var recipeIndex = $localStorage.savedRecipes.indexOf(recipe);
       $localStorage.savedRecipes.pop(recipeIndex);
     };
+    
 });

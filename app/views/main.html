@@ -1,22 +1,33 @@
 
-<div ng-app class="jumbotron" ng-controller="MainCtrl">
-  <h1>What can I do with a Plaintain? </h1>
-  <p>This app was inspired by the lone Plaintain sitting in my fruit bowl.</p>
-  <p>Search for recipes by typing in an ingredient below. </p>
-  <label> Enter your ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
-  <div class="search">
-    <div><button class="btn btn-md btn-block btn-primary" ng-click="findRecipes()">Search Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
+<div ng-app ng-controller="MainCtrl">
+  <div class="jumbotron">
+    <h1>What can I do with a Plaintain? </h1>
+
+    <label> Enter your ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
+    <div class="search">
+      <div><button class="btn btn-md btn-block btn-primary" ng-click="findRecipes()">Search Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
+      </div>
     </div>
   </div>
   <div ng-if="recipesFound">
+    <div class="instructions">
       <p class="lead">
         {{recipesFound.totalMatchCount}} recipes found!
       </p>
-      <div ng-repeat="recipe in recipesFound.matches | limitTo: 12">
-        <p> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}">{{recipe.recipeName}}</a>
+      <p>This app was inspired by the lone Plaintain sitting in my fruit bowl.</p>
+      <p>Search for recipes by typing in an ingredient below. </p>
+    </div>
+    <div ng-repeat="recipe in recipesFound.matches | limitTo: 9">
+    <!--  Trying to create 3 x 4 rows in bootstrap
+      <table>
+        <tr><td>{{}}</td></tr>
+      </table> -->
+      <p> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}">{{recipe.recipeName}}</a>
         <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
         <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button>
+
       </div>
+
       <div ng-if="storage.savedRecipes">
         <h2>My recipe box</h2>
         <ul class="saved-recipes-list">
@@ -26,5 +37,5 @@
           </li>
         </ul>
       </div>
+    </div>
   </div>
-</div>
