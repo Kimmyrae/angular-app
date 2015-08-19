@@ -15,7 +15,7 @@
         I found {{recipesFound.totalMatchCount}} recipes.
       </p>
       <div ng-repeat="recipe in recipesFound.matches | limitTo: 12">
-        <p> id: {{recipe.id}} title: {{recipe.recipeName}}
+        <p> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}">{{recipe.recipeName}}</a>
         <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
         <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button>
       </div>
