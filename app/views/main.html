@@ -4,15 +4,16 @@
   <h5>This app was inspired by the lone Plaintain sitting in my fruit bowl.</h5>
     <h4>Search for recipes by typing in an ingredient below. </h4>
 
+
+
   <label> Enter your ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
   <div class="search">
     <div><button class="btn btn-md btn-block btn-primary" ng-click="findRecipes()">Get my Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
     </div>
   </div>
-  <p>You have{{savedRecipes}} saved recipes</p>
   <div ng-if="recipesFound">
       <p class="lead">
-        I found {{recipesFound.totalMatchCount}} recipes.
+        {{recipesFound.totalMatchCount}} recipes found!
       </p>
       <div ng-repeat="recipe in recipesFound.matches | limitTo: 12">
         <p> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}">{{recipe.recipeName}}</a>
@@ -25,9 +26,8 @@
           <li ng-repeat="recipe in storage.savedRecipes">
             <a ng-href="/#/current/{{recipe.id}}" class="btn btn-lg btn-primary">{{recipe.recipeName}}</a>
             <button ng-click="delete(recipe.recipeName)">Remove this recipe<i class="glyphicon glyphicon-erase"></i></button>
-
           </li>
         </ul>
       </div>
-    </div>
+  </div>
 </div>
