@@ -25,9 +25,16 @@ angular.module('angularAppApp')
 
     $scope.saveRecipe = function(recipe){
       if ($localStorage.savedRecipes){
-        $localStorage.savedRecipes.push(recipe);
+        if($localStorage.savedRecipes.indexOf(recipe)){
+          $localStorage.savedRecipes.push(recipe);
+        }            
+
       }  else {
         $localStorage.savedRecipes=[recipe];
       }
+    };
+    $scope.delete = function(recipe){
+      var recipeIndex = $localStorage.savedRecipes.indexOf(recipe);
+      $localStorage.savedRecipes.pop(recipeIndex);
     };
 });

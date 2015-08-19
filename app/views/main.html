@@ -24,8 +24,8 @@
         <h2>My recipe box</h2>
         <ul class="saved-recipes-list">
           <li ng-repeat="recipe in storage.savedRecipes">
-            <a ng-href="/#/current/{{recipe.id}}" class="btn btn-lg btn-primary">{{recipe.recipeName}}</a>
-            <button ng-click="delete(recipe.recipeName)">Remove this recipe<i class="glyphicon glyphicon-erase"></i></button>
+            <a ng-href="/#/current/{{recipe.id}}" class="btn btn-small btn-primary">{{recipe.recipeName}}</a>
+            <button ng-click="delete(recipe)">Remove this recipe<i class="glyphicon glyphicon-erase"></i></button>
           </li>
         </ul>
       </div>
