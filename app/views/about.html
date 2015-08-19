@@ -1,4 +1,14 @@
 <p>This is the about view.</p>
+<div ng app ng-if="storage.savedRecipes">
+  <h2>My recipe box</h2>
+  <ul class="saved-recipes-list">
+    <li ng-repeat="recipe in storage.savedRecipes">
+
+      <a ng-href="/#/current/{{recipe.id}}" class="btn btn-lg btn-primary">{{recipe.recipeName}}</a>
+    </li>
+  </ul>
+</div>
+
 
 <div ng-app ng-init="firstnum=1;secondnum=2">
   <input type="number" min="0" ng-model="firstnum">
