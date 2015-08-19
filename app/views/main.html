@@ -10,13 +10,13 @@
     </div>
   </div>
   <div ng-if="recipesFound">
-    <div class="instructions">
+  
       <p class="lead">
         {{recipesFound.totalMatchCount}} recipes found!
       </p>
       <p>This app was inspired by the lone Plaintain sitting in my fruit bowl.</p>
       <p>Search for recipes by typing in an ingredient below. </p>
-    </div>
+
     <div ng-repeat="recipe in recipesFound.matches | limitTo: 9">
     <!--  Trying to create 3 x 4 rows in bootstrap
       <table>
