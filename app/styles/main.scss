@@ -24,6 +24,11 @@ body {
 h1 {
   animation-duration: 3s;
   animation-name: slidein;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 3em;
+  letter-spacing: -2px;
+  border-bottom: 2px solid black;
+  text-transform: uppercase;
 }
 
 @keyframes slidein {
