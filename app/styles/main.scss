@@ -13,6 +13,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+body {
   padding: 0;
   background: linear-gradient(#ffe28a, #fffeb3);
 
@@ -70,15 +74,22 @@ h1 {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  background-image: url('../images/team_plantains.jpg');
-
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+/*  border-bottom: 10px solid #e5e5e5;*/
+  background: url('../images/team_plantains.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+.lead {
+background-color: #999999;
+
+}
+.btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
 
 /* Supporting marketing content */
 .marketing {

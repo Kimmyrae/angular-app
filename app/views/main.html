@@ -2,21 +2,31 @@
 <div ng-app ng-controller="MainCtrl">
   <h1>What can I do with a Plaintain? </h1>
   <div class="jumbotron">
-    <label> Enter your ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
-    <div class="search">
-      <div><button class="btn btn-md btn-block btn-primary" ng-click="findRecipes()">Search Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
-      </div>
+
+  </div>
+  <label> Enter your ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
+  <div class="search">
+    <div><button class="btn btn-md btn-block btn-primary" ng-click="findRecipes()">Search Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
     </div>
   </div>
   <div ng-if="recipesFound">
       <p class="lead">
         {{recipesFound.totalMatchCount}} recipes found!
       </p>
-      <p>This app was inspired by the lone Plaintain sitting in my fruit bowl.</p>
-      <p>Search for recipes by typing in an ingredient below. </p>
+      <p class="lead">This app was inspired by the lone Plaintain sitting in my fruit bowl.
+      Search for recipes by typing in an ingredient below. </p>
+      <p>How to use this app: Simply type in one ingredient and see what recipes are just for you!<p>
 
     <div ng-repeat="recipe in recipesFound.matches | limitTo: 9">
     <!--  Trying to create 3 x 4 rows in bootstrap
+    <div ng-repeat="product in products" class="col-md-6">
+<div class="thumbnail">
+<img ng-src="{{recipe.smallImageUrls[0]}}" alt="" />
+<p class="title">{{ product.name }}</p>
+<p class="price">{{ product.price | currency }}</p>
+<p class="date">{{ product.pubdate | date }}</p>
+</div>
+</div>
       <table>
         <tr><td>{{}}</td></tr>
       </table> -->
