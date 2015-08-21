@@ -11,7 +11,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   color: #000;
   padding: 0.2em 0;
 }
+.jumbotron{
 
+  background: url('../images/plantainvsbanana.jpg');
+  height: 300px;
+}
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
@@ -27,9 +31,12 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   border-bottom: 2px solid black;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
+ul {
+    list-style: square outside none;
+}
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -93,10 +100,10 @@ h1 {
 background-color: #999999;
 
 }
-.btn {
+/* .btn {
   font-size: 21px;
   padding: 14px 24px;
-}
+} */
 
 
 /* Supporting marketing content */
@@ -129,4 +136,27 @@ background-color: #999999;
   .jumbotron {
     border-bottom: 0;
   }*/
+}
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+.btn-primary.outline {
+    border: 2px solid #0099cc;
+    color: #0099cc;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+  background: #0099cc;
+    color: #ffffff;
 }
