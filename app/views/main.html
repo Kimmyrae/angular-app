@@ -7,12 +7,13 @@
   <p class="instructions">How to use this app: Simply type in one ingredient and see what recipes are just for you!<p>
 </div>
 <div class="jumbotron">
-</div>
+
   <label> Enter your ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
   <div class="search">
     <div><button class="btn btn-md btn-block btn-primary" ng-click="findRecipes()">Search Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
     </div>
   </div>
+</div>
   <div ng-if="recipesFound">
       <p class="lead">
         {{recipesFound.totalMatchCount}} recipes found!

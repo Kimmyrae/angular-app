@@ -80,9 +80,13 @@ h1 {
 
 /*  border-bottom: 10px solid #e5e5e5;*/
 
-  .jumbotron {
-  background-image:url('../images/team_plantains.jpg');
+  body {
 
+  background: url('../images/white_brick_wall.png') center center fixed;
+  /* -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover; */
   height: 500px;
 }
 
@@ -122,8 +126,8 @@ background-color: #999999;
   .header {
     margin-bottom: 10px;
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
+  /* Remove the bottom border on the jumbotron for visual effect
   .jumbotron {
     border-bottom: 0;
-  }
+  }*/
 }
