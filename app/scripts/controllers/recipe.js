@@ -11,7 +11,9 @@ angular.module('angularAppApp')
   .controller('RecipeCtrl', function($scope, $routeParams, $localStorage) {
     $scope.recipeID = $routeParams.recipeID;
       for (var i = 0; i < $localStorage.savedRecipes.length; i++) {
-        if ($localStorage.savedRecipes[i].id === $scope.recipeID){}
+        if ($localStorage.savedRecipes[i].id === $scope.recipeID){
+          $scope.currentRecipe = $localStorage.savedRecipes[i];
+        }
       }
 
   });

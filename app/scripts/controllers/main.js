@@ -25,7 +25,7 @@ angular.module('angularAppApp')
 
     $scope.saveRecipe = function(recipe){
       if ($localStorage.savedRecipes){
-        if($localStorage.savedRecipes.indexOf(recipe)){
+        if(!$localStorage.savedRecipes.indexOf(recipe)){
           $localStorage.savedRecipes.push(recipe);
         }
 
@@ -37,5 +37,5 @@ angular.module('angularAppApp')
       var recipeIndex = $localStorage.savedRecipes.indexOf(recipe);
       $localStorage.savedRecipes.pop(recipeIndex);
     };
-    
+
 });

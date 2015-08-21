@@ -1,16 +1,4 @@
 <p>This is the recipe view.</p>
-<h1>My recipes {{recipe.recipeName}}</h1>
+<h1>My recipes {{currentRecipe.recipeName}}</h1>
 
-<dl>
-    <dt>Recipes Found</dt>
-    <dd>{{currentWeather.weather[0].main}}</dd>
-    <dd>{{currentWeather.weather[0].description}}</dd>
-    <dt>Temperature</dt>
-    <dd>{{currentWeather.main.temp}} &deg;F</dd>
-    <dt>Wind</dt>
-    <dd>{{currentWeather.wind.speed}} mph at {{currentWeather.wind.deg}} &deg;</dd>
-    <dt>Clouds</dt>
-    <dd>{{currentWeather.clouds.all}}%</dd>
-</dl>
-
-<p><a ng-href="/#/forecast/{{RecipeID}}" class="btn btn-lg btn-primary">View Saved Recipes</a></p>
+{{currentRecipe}}
