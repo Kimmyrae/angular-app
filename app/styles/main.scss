@@ -18,7 +18,7 @@ body {
 }
 body {
   padding: 0;
-  background: linear-gradient(#ffe28a, #fffeb3);
+  background: linear-gradient(white, #fffeb3);
 
 }
 h1 {
@@ -77,15 +77,15 @@ h1 {
 }
 
 /* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
+
 /*  border-bottom: 10px solid #e5e5e5;*/
-  background: url('../images/team_plantains.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+  .jumbotron {
+  background-image:url('../images/team_plantains.jpg');
+
+  height: 500px;
 }
+
 .lead {
 background-color: #999999;
 
