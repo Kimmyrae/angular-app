@@ -28,13 +28,5 @@ angular.module('angularAppApp')
       }
     });
   });
-  
-  // Recipe ID view
-    angular.module('yourApp')
-      .controller('CurrentCtrl', function ($scope, $routeParams, current) {
-        $scope.recipeID = $routeParams.recipeID;
 
-        $scope.savedRecipes = current.query({
-            recipeID: $routeParams.recipeID
-        });
-      });
+  
