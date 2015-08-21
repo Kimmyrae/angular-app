@@ -29,10 +29,7 @@
 <p class="price">{{ product.price | currency }}</p>
 <p class="date">{{ product.pubdate | date }}</p>
 </div>
-</div>
-      <table>
-        <tr><td>{{}}</td></tr>
-      </table> -->
+</div> -->
       <p> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}">{{recipe.recipeName}}</a>
         <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
         <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button>
