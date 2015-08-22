@@ -1,4 +1,11 @@
-<p>This is the recipe view.</p>
-<h1>My recipes {{currentRecipe.recipeName}}</h1>
-
-{{currentRecipe}}
+<div ng-app ng-controller="RecipeController">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3" id="final-selection">
+			<p class="lead">This is the recipe view.</p>
+      <h1>My recipes {{currentRecipe.recipeName}}</h1>
+      {{currentRecipe}}
+			<button class="btn btn-default" type="submit" ng-click="saveUserAnswer(1)">{{currentRecipe.recipeName  }}</button>
+			<button class="btn btn-default" type="submit" ng-click="saveUserAnswer(2)">{{ currentRecipe.recipeName}}</button><br>
+			<a href="#/">Search for another recipe!<a/>
+		</div>
+</div>
