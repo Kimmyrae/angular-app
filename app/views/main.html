@@ -35,9 +35,9 @@
       <p class="date">{{ product.pubdate | date }}</p>
     </div>
   </div> -->
-  <p> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}" target="_blank">{{recipe.recipeName}}</a>
-    <img src="{{recipe.smallImageUrls[0]}}" alt="" /></p>
-    <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button>
+  <h2> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}" target="_blank">{{recipe.recipeName}}</a></h2>
+  <h3>  <img src="{{recipe.smallImageUrls[0]}}" alt="" /></h3>
+  <p>  <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button></p>
 
   </div>
 
