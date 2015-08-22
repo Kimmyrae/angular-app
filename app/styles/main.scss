@@ -12,8 +12,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 .jumbotron{
-
   background: url('../images/plantainvsbanana.jpg');
+
   height: 300px;
 }
 body {
@@ -28,15 +28,13 @@ h1 {
   animation-duration: 3s;
   animation-name: slidein;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 3em;
+  font-size: 5em;
   letter-spacing: -2px;
   border-bottom: 2px solid black;
   text-transform: lowercase;
 }
 
-ul {
-    list-style: square outside none;
-}
+
 @keyframes slidein {
   from {
     margin-left: 100%;
