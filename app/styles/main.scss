@@ -12,14 +12,25 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
+/* Main marketing message and sign up button */
+.jumbotron {
+ background: url('../images/plantainvsbanana.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+
+ /*  font and background */
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
+  background: url('../images/white_brick_wall.png') center center fixed;
+  height: 500px;
 }
-//body {
-//  padding: 0;
-//  background: linear-gradient(white, #fffeb3);
-//}
+
+
+/* animation for header */
 h1 {
   animation-duration: 3s;
   animation-name: slidein;
@@ -42,19 +53,7 @@ h1 {
     width: 100%;
   }
 }
-/* Everything but the jumbotron gets side spacing for mobile first views
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
-/* Custom page header
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-*/
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -75,37 +74,3 @@ h1 {
 .container-narrow > hr {
   margin: 30px 0;
 }
-
-/* Main marketing message and sign up button */
-
-
-  body {
-
-  background: url('../images/white_brick_wall.png') center center fixed;
-  /* -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover; */
-  height: 500px;
-}
-
-/* .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-} */
-
-
-
-
-/* Responsive: Portrait tablets and up
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-*/
-//.jumbotron{
-//  background: url('../images/plantainvsbanana.jpg');
-
-//  height: 300px;
-//}
