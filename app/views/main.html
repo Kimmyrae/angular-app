@@ -1,22 +1,12 @@
 
 <div ng-app ng-controller="MainCtrl">
   <div class="jumbotron">
-    <h1>What can I do with a Plaintain? </h1>
     <label> Enter an ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
     <div class="search">
       <div><button class="btn btn-md btn-block btn-primary" ng-click="findRecipes()">Search Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
       </div>
     </div>
   </div>
-
-<!--    <div class="instructions">
-      <aside>
-    <ol>
-      <li>This app was inspired by the lone Plaintain sitting in my fruit bowl.</li>
-      <li>Search for recipes by typing in one ingredient.</li>
-    </ol>
-    </aside>
-  </div> -->
   </div>
 
   <div ng-if="recipesFound">
@@ -24,7 +14,7 @@
       {{recipesFound.totalMatchCount}} recipes found!
     </p> -->
 
-<h3>Your Recipes</h3>
+<h3>Recipes:</h3>
     <div ng-repeat="recipe in recipesFound.matches | limitTo: 9">
       <!--  Trying to create 3 x 4 rows in bootstrap
       <div ng-repeat="product in products" class="col-md-6">
