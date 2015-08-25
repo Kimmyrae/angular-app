@@ -1,7 +1,8 @@
 
 <div ng-app ng-controller="MainCtrl">
   <div class="jumbotron">
-
+    <p>A recipe finder inspired by the plantian sitting on my counter.</p>
+    <p>Enter an ingredient below and find <strong>amazing</strong> recipes!!</p>
     <label> Enter an ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
     <div class="search">
       <div><button class="btn btn-md btn-block btn-primary" ng-click="findRecipes()">Search Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
@@ -27,7 +28,7 @@
   </div>
 </div>
 <div ng-if="storage.savedRecipes">
-  <h2>My recipe box</h2>
+  <h2>Your recipe box</h2>
   <ul class="saved-recipes-list">
     <li ng-repeat="recipe in storage.savedRecipes">
       <a ng-href="/#/recipe/{{recipe.id}}" class="btn btn-small btn-primary">{{recipe.recipeName}}</a>

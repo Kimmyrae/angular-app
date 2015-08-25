@@ -5,7 +5,7 @@
  * @name angularAppApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the angularAppApp
+ * Controller of What can I do with a plantain
  */
 angular.module('angularAppApp')
   .controller('MainCtrl', function ($scope, recipesearch, $localStorage) {

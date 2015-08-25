@@ -4,11 +4,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 // Stylesheets
-@import "_variables";
-@import "_transitions";
-@import "_buttons";
+@import "variables";
+@import "transitions";
+@import "buttons";
 
-// animation
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -43,6 +43,7 @@ h1 {
   letter-spacing: -2px;
   border-bottom: 2px solid black;
   text-transform: lowercase;
+  color: green;
 }
 
 
