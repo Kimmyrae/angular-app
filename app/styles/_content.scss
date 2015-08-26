@@ -4,13 +4,13 @@
   li {
     display: inline-block;
     width: 33%;
-    height: 200px;
+    height: 180px;
     margin: 0;
     padding: 3rem;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-
+    text-shadow: rgba(255,0,255,0.3) 0px -1px;
   }
 
 }
@@ -22,7 +22,7 @@
 }
 
 /* Main marketing message and sign up button */
-.jumbotron {
+.hero container-fluid {
  background: url('../images/plantainvsbanana.png') no-repeat;
 
 /*  -webkit-background-size: cover;
@@ -30,7 +30,7 @@
   -o-background-size: cover;
   background-size: cover; */
  }
-.jumbotron-paragraph {
+.hero container-fluid {
   float: right;
 
 }
