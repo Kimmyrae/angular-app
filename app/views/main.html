@@ -1,6 +1,7 @@
 
 <div ng-app ng-controller="MainCtrl">
   <div class="jumbotron">
+      <div class="jumbotron-paragraph">
     <p>A recipe finder inspired by the plantian sitting on my counter.</p>
     <p>Enter an ingredient below and find <strong>amazing</strong> recipes!!</p>
     <label> Enter an ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
@@ -8,6 +9,7 @@
       <div><button class="btn btn-md btn-block btn-primary" ng-click="findRecipes()">Search Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
       </div>
     </div>
+  </div>
   </div>
 
 
@@ -17,15 +19,12 @@
 </p> -->
 <div class='container'>
   <h2>Recipes:</h2>
-  <div ng-repeat="recipe in recipesFound.matches | limitTo: 9">
-    <div class="row">
-      <div class="col-md-4">
-        <h2> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}" target="_blank">{{recipe.recipeName}}</a></h2>
-        <h3>  <img src="{{recipe.smallImageUrls[0]}}" alt="" class="img-responsive" width="304" height="236"</h3>
-        <p> <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button></p>
-      </div>
-    </div>
-  </div>
+  <ul class="recipe-list">
+  <li ng-repeat="recipe in recipesFound.matches | limitTo: 9" style="background-image: url({{recipe.smallImageUrls[0]}});">
+         <h2> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}" target="_blank">{{recipe.recipeName}}</a></h2>
+         <p class="save-button-container"> <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button></p>
+  </li>
+</ul>
 </div>
 <div ng-if="storage.savedRecipes">
   <h2>Your recipe box</h2>
