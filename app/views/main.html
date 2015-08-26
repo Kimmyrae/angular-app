@@ -1,7 +1,6 @@
 
 <div ng-app ng-controller="MainCtrl">
-
-      <div class="jumbotron-paragraph">
+  <div class="hero container-fluid">
     <p>A recipe finder inspired by the plantian sitting on my counter.</p>
     <p>Enter an ingredient below and find <strong>amazing</strong> recipes!!</p>
     <label> Enter an ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
@@ -10,7 +9,7 @@
       </div>
     </div>
   </div>
-</div>
+
 
 
 <div ng-if="recipesFound">
@@ -34,6 +33,7 @@
       <button ng-click="delete(recipe)">Remove this recipe<i class="glyphicon glyphicon-erase"></i></button>
     </li>
   </ul>
+</div>
 </div>
 </div>
 </div>
