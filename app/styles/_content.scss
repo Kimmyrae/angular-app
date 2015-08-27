@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    color: purple;
+    color: black;
     text-shadow: rgba(255,0,255,0.3) 0px -1px;
   }
 
@@ -38,31 +38,33 @@
   -o-background-size: cover;
   background-size: cover; */
  }
-.hero container-fluid {
+.hero container-fluid p{
   float: right;
-
+  color: #A66EFF;
 }
  /*  font and background */
 body {
-
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   background: url('../images/white_brick_wall.png') center center fixed;
   height: 500px;
 }
 
-
 /* animation for header */
 h1 {
   animation-duration: 3s;
   animation-name: slidein;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 5em;
+  font-size: 80px;
+ background: -webkit-linear-gradient(#fff100,#ff9b00);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+/*   font-size: 5em;
   letter-spacing: -2px;
   border-bottom: 2px solid black;
   text-transform: lowercase;
   text-shadow: rgba(255,0,255,0.3) 0px -1px;
-  color: green;
+  color: green; */
 }
 
 
@@ -85,7 +87,7 @@ h1 {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
-    text-shadow: rgba(255,0,255,0.3) 0px -1px;
+    text-shadow: rgba(166,0,166,0.3) 0px -1px;
   }
 //}
 
