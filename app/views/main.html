@@ -13,9 +13,12 @@
 
 
 <div ng-if="recipesFound">
-  <!--  <p class="lead">
+  <!-- This code will displacy total recipes found matching keyword. I chose not to include.
+   <p class="lead">
   {{recipesFound.totalMatchCount}} recipes found!
 </p> -->
+
+<!-- Found Recipes. Yummly API limits me to display 10, I chose to limit 9 for styling reasons  -->
 <div class='container'>
   <h2>Found Recipes:</h2>
   <ul class="recipe-list">
@@ -25,6 +28,7 @@
   </li>
 </ul>
 </div>
+<!-- Save recipes and delete saved recipes  -->
 <div ng-if="storage.savedRecipes">
   <h2>Your recipe box</h2>
   <ul class="saved-recipes-list">
