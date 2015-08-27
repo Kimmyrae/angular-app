@@ -13,14 +13,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    color: black;
-    text-shadow: rgba(255,0,255,0.3) 0px -1px;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+    border: 2px solid #fff100;
+    font-size: 40px;
   }
 
-  /* Format save button */
-.save-button-container{
+  /* Format save button
+. save-button-container {
+  float: left;
 
-}
+}*/
 }
 .browsehappy {
   margin: 0.2em 0;
@@ -48,7 +52,11 @@ body {
   font-weight: 300;
   background: url('../images/white_brick_wall.png') center center fixed;
   height: 500px;
+  color: #ff8a00;
+  text-align: center;
+  font-size: 30px;
 }
+
 
 /* animation for header */
 h1 {
@@ -56,15 +64,9 @@ h1 {
   animation-name: slidein;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 80px;
- background: -webkit-linear-gradient(#fff100,#ff9b00);
+  background: -webkit-linear-gradient(#fff100,#ff9b00);
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
-/*   font-size: 5em;
-  letter-spacing: -2px;
-  border-bottom: 2px solid black;
-  text-transform: lowercase;
-  text-shadow: rgba(255,0,255,0.3) 0px -1px;
-  color: green; */
 }
 
 

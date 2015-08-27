@@ -3,7 +3,7 @@
   <div class="hero container-fluid">
     <p>A recipe finder inspired by the plantian sitting on my counter.</p>
     <p>Enter an ingredient below and find <strong>amazing</strong> recipes!!</p>
-    <label> Enter an ingredient here: </label><input ng-model="query" placeholder="Plaintain" autofocus>
+    <label> Enter an ingredient here: </label><input ng-model="query" placeholder="example: Plaintain" autofocus>
     <div class="search">
       <div><button class="btn btn-md btn-primary" ng-click="findRecipes()">Search Recipes!!<span class="glyphicon glyphicon-cutlery"></span></button>
       </div>
@@ -17,7 +17,7 @@
   {{recipesFound.totalMatchCount}} recipes found!
 </p> -->
 <div class='container'>
-  <h2>Recipes:</h2>
+  <h2>Found Recipes:</h2>
   <ul class="recipe-list">
   <li ng-repeat="recipe in recipesFound.matches | limitTo: 9" style="background-image: url({{recipe.smallImageUrls[0]}});">
          <h2> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}" target="_blank">{{recipe.recipeName}}</a></h2>
@@ -33,7 +33,6 @@
       <button ng-click="delete(recipe)">Remove this recipe<i class="glyphicon glyphicon-erase"></i></button>
     </li>
   </ul>
-</div>
 </div>
 </div>
 </div>
