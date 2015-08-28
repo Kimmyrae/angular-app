@@ -25,12 +25,11 @@ element.style {
   a{
     color: white;
     font-weight: bold;
-
     text-decoration: none;
-      font-size: 1em;
+    font-size: 1em;
     -webkit-text-stroke: 1px darkgrey;
- -webkit-text-fill-color: white;
- -webkit-animation: fill 0.5s infinite alternate;
+    -webkit-text-fill-color: white;
+    -webkit-animation: fill 0.5s infinite alternate;
   }
   /* Format save button */
 
