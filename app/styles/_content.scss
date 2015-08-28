@@ -21,11 +21,11 @@
   }
 
   /* Format save button
-. save-button-container {
-  float: left;
-
+.button {
+  float: right;
 }*/
-}
+
+//}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -50,8 +50,7 @@
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
-  background-color: #ff8a00;
-  background: url('../images/white_brick_wall.png') center center fixed;
+  background-color: #ff8a00;  background: url('../images/white_brick_wall.png') center center fixed;
   height: 500px;
   color: #ff8a00;
   text-align: center;
@@ -84,7 +83,7 @@ h1 {
 }
 
 
-  /* Make the masthead heading the same height as the navigation */
+  /* Make the masthead heading the same height as the navigation 
   h3 {
     margin-top: 0;
     margin-bottom: 0;
@@ -93,14 +92,10 @@ h1 {
     text-shadow: rgba(166,0,166,0.3) 0px -1px;
   }
 
-
+*/
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
 }
