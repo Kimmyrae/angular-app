@@ -19,29 +19,12 @@
     border: 2px solid #fff100;
     font-size: 40px;
   }
-
-  /* Format save button
-.button {
-  float: right;
-}*/
-
-//}
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
 }
 
-/* Main marketing message and sign up button */
-.hero container-fluid {
- background: url('../images/plantainvsbanana.png') no-repeat;
+  /* Format save button */
 
-/*  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
- }
+/* Main marketing message and sign up button */
+
 .hero container-fluid p{
   float: right;
   color: #A66EFF;
@@ -69,30 +52,6 @@ h1 {
  -webkit-text-fill-color: transparent;
 }
 
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
-  /* Make the masthead heading the same height as the navigation 
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-    text-shadow: rgba(166,0,166,0.3) 0px -1px;
-  }
-
-*/
 /* Custom page footer */
 .footer {
   padding-top: 19px;

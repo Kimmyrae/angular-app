@@ -24,9 +24,13 @@ angular.module('angularAppApp')
     };
 
     $scope.saveRecipe = function(recipe){
+
       if ($localStorage.savedRecipes){
-        if(!$localStorage.savedRecipes.indexOf(recipe)){
+        if($localStorage.savedRecipes.indexOf(recipe) >= 0){
+          console.log(" Recipe Already Saved");
+        } else {
           $localStorage.savedRecipes.push(recipe);
+
         }
 
       }  else {
@@ -36,6 +40,10 @@ angular.module('angularAppApp')
     $scope.delete = function(recipe){
       var recipeIndex = $localStorage.savedRecipes.indexOf(recipe);
       $localStorage.savedRecipes.pop(recipeIndex);
+      if ($localStorage.savedRecipes.length === 0){
+        delete $localStorage.savedRecipes;
+      }
+
     };
 
 });
