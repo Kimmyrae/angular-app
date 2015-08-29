@@ -18,17 +18,17 @@
 
 <!-- Found Recipes. Yummly API limits me to display 10, I chose to limit 9 for styling reasons  -->
 <div class='container'>
-  <h2>Found Recipes:</h2>
-  <ul class="recipe-list">
-  <li ng-repeat="recipe in recipesFound.matches | limitTo: 9" style="background-image: url({{recipe.smallImageUrls[0]}});">
-         <h2> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}" target="_blank">{{recipe.recipeName}}</a></h2>
-         <p class="save-button-container"> <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button></p>
-  </li>
+  <h2>Found Recipes</h2>
+ <ul class="recipe-list">
+<li ng-repeat="recipe in recipesFound.matches | limitTo: 9" style="background-image: url({{recipe.smallImageUrls[0]}});">
+       <h2> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}" target="_blank">{{recipe.recipeName}}</a></h2>
+       <p class="save-button-container"> <button class="btn btn-xs btn-success" ng-click="saveRecipe(recipe)">Save This Recipe!<span class="glyphicon glyphicon-apple"></span></button></p>
+</li>
 </ul>
 </div>
 <!-- Save recipes and delete saved recipes  -->
 <div ng-if="storage.savedRecipes">
-  <h2>Your recipe box</h2>
+<h2>Your recipe box</h2>
   <ul class="saved-recipes-list">
     <li ng-repeat="recipe in storage.savedRecipes">
       <a ng-href="/#/recipe/{{recipe.id}}" class="btn btn-small btn-primary">{{recipe.recipeName}}</a>
