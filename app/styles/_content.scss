@@ -45,6 +45,10 @@ element.style {
 
        background: url('../images/green-smoothie.jpg') bottom center no-repeat;
        background-size: cover;
+       background-repeat: no-repeat;
+       background-position: bottom center;
+       padding-bottom: 200px;
+       padding-top: 25px;
        min-height: 400px;
        color: white;
 }
