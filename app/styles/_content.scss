@@ -42,7 +42,7 @@ element.style {
 
 .hero{
 
-       background: url('../images/green-smoothie.jpg') bottom center no-repeat;
+       background: url('../images/green-smoothie2.jpg') bottom center no-repeat;
        background-size: cover;
        background-repeat: no-repeat;
        background-position: bottom center;
@@ -55,14 +55,7 @@ element.style {
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
-  background: -webkit-linear-gradient(90deg, #FFEEEE 10%, #DDEFBB 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #FFEEEE 10%, #DDEFBB 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #FFEEEE 10%, #DDEFBB 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #FFEEEE 10%, #DDEFBB 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #FFEEEE 10%, #DDEFBB 90%); /* W3C */
-
-
-/*  background-color: #ff8a00;  background: url('../images/white_brick_wall.png') center center fixed; */
+  background-color: #ff8a00;  background: url('../images/white_brick_wall.png') center center fixed;
   height: 500px;
   color: black;
   text-align: center;
@@ -75,7 +68,8 @@ h1 {
   animation-duration: 3s;
   animation-name: slidein;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 80px;
+  font-size: 90px;
+  font-weight: bold;
   color: white;
 /*   background: -webkit-linear-gradient(#fff100,#ff9b00);
  -webkit-background-clip: text;
