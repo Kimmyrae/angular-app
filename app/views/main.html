@@ -18,7 +18,7 @@
 
 <!-- Found Recipes. Yummly API limits me to display 10, I chose to limit 9 for styling reasons  -->
 <div class='container'>
-  <h2>Found Recipes</h2>
+  <h5>Found Recipes</h5>
  <ul class="recipe-list">
 <li ng-repeat="recipe in recipesFound.matches | limitTo: 9" style="background-image: url({{recipe.smallImageUrls[0]}});">
        <h2> <a ng-href="http://www.yummly.com/recipe/{{recipe.id}}" target="_blank">{{recipe.recipeName}}</a></h2>
